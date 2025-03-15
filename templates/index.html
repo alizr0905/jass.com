@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JASS Photography</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Welcome to JASS Photography</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section class="gallery">
+            <h2>Our Gallery</h2>
+            <div class="grid">
+                <img src="{{ url_for('static', filename='images/photo1.jpg') }}" alt="Photo 1">
+                <img src="{{ url_for('static', filename='images/photo2.jpg') }}" alt="Photo 2">
+                <img src="{{ url_for('static', filename='images/photo3.jpg') }}" alt="Photo 3">
+            </div>
+        </section>
+    </main>
+</body>
+</html>
